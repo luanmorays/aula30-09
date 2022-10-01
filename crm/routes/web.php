@@ -27,6 +27,8 @@ Route::get('/vendas/relatorio/{mes}/{departamento}', [VendasController::class, '
 
 // 1º passo: criar a rota
 Route::any('/contato', [UsuarioController::class, 'contato']);
+Route::any('/insere', [UsuarioController::class, 'insere']);
+Route::any('/leitura/{modo}', [UsuarioController::class, 'leitura']);
 
 // rota para a página de e-commerce
 Route::get('/produtos', [VendasController::class, 'produtos']);
